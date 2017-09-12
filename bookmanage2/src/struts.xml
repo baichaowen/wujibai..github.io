@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" namespace="/" extends="struts-default,json-default">
+		<action name="*bookaction" class="cn.bdqn.web.BookAction"
+			method="{1}">
+			<result name="success">list.jsp</result>
+			<result name="input">login.jsp</result>
+			<result name="pre">update.jsp</result>
+		</action>
+
+		<action name="*Useraction" class="cn.bdqn.web.BookUserAction"
+			method="{1}">
+			<result name="success" type="redirectAction">listbookaction</result>
+			<result name="input">login.jsp</result>
+		</action>
+		<action name="random" class="cn.bdqn.web.RandomAction">
+			<result type="stream">
+				<param name="contentType">image/jpeg</param>
+				<param name="inputName">inputStream</param>
+			</result>
+		</action>
+	</package>
+
+</struts>    
