@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="saafsa"
+  id="myeclipse.1505209127993"
+  context-root="/saafsa"
+  j2ee-spec="6.0"
+  archive="saafsa.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
